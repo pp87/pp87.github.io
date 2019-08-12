@@ -1,0 +1,31 @@
+* {
+	border: 1px solid green;
+}
+
+/* The navigation bar */
+.navbar {
+	background-color: #333;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+/* Links inside the navbar */
+.navbar a {
+	float: right;
+	display: block;
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+  
+/* Change background on mouse-over */
+.navbar a:hover {
+	background: dodgerblue;
+}
+  
+/* Main content */
+.container-main {
+	margin-top: 80px; /* Add a top margin to avoid content overlay */
+}
