@@ -4,33 +4,23 @@
 }
 
 body {
-    font-family: "Gothic";
-	background: rgb(11,57,84);
-	background: -moz-linear-gradient(0deg, rgba(11,57,84,1) 0%, rgba(0,0,0,1) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(11,57,84,1) 0%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(0deg, rgba(11,57,84,1) 0%, rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b3954",endColorstr="#000000",GradientType=1);
-	color: white;
-	
+    font-family: "Gothic";	
 }
 /* The navigation bar */
 .navbar {
 	overflow: hidden;
-	background-color: black;
+	background-color: white;
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
 	padding: 5px;
-	-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
 }
   
 /* Links inside the navbar */
 .navbar a {
 	float: right;
 	display: block;
-	color: white;
+	color: black;
 	padding: 10px;
 	text-decoration: none;
 	margin-right: 20px;
@@ -40,6 +30,12 @@ body {
 .navbar a:hover {
 	background:rgba(11,57,84,1);
 	border-radius: 5px;
+	color: white;
+}
+
+.navbar img {
+	height: 35px;
+	padding-left: 10px;
 }
   
 /* Main content */
@@ -106,11 +102,22 @@ body {
 }
 
 .container-footer {
-	color: white;
 	text-align: center;
+	padding: 1rem;
+}
+
+.container-footer a {
+	text-decoration: none;
+}
+
+.container-footer a:hover {
+	font-weight: bold;
+	text-decoration: black;
+	text-decoration-line: none;
+	text-decoration-style: dotted;
 }
 
 .container-footer a:visited {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
