@@ -1,42 +1,95 @@
 @font-face {
+    font-family: "Inter Regular";
+    src: url("fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Inter Italic";
+    src: url("fonts/Inter-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Signika Regular";
+    src: url("fonts/Signika-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Signika Bold";
+    src: url("fonts/Signika-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Signika Light";
+    src: url("fonts/Signika-Light.ttf");
+}
+
+@font-face {
+    font-family: "Signika Semibold";
+    src: url("fonts/Signika-Semibold.ttf");
+}
+
+@font-face {
     font-family: "Gothic";
     src: url("fonts/GOTHIC.TTF");
 }
 
+@font-face {
+    font-family: "Gothic Bold";
+    src: url("fonts/GOTHICB.TTF");
+}
+
 body {
-    font-family: "Gothic";	
+	font-family: 'Signika Light', 'Inter Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(20, 20, 20);
+	box-sizing: border-box;
 }
 /* The navigation bar */
 .navbar {
+	display: flex;
+	flex-basis: auto;
 	overflow: hidden;
-	background-color: white;
 	position: fixed; /* Set the navbar to fixed position */
 	top: 0; /* Position the navbar at the top of the page */
 	width: 100%; /* Full width */
-	padding: 5px;
+	align-items: center;
+	background: white;
 }
-  
+
+.nav-logo {
+	flex-grow: 1;
+}
+
+.nav-logo img {
+	height: 40px;
+	padding: 5px 5px 5px 10px;
+}
+
+.nav-links {
+	flex-grow: 1;
+	text-align: right;
+	padding-right: 10px;
+}
+
 /* Links inside the navbar */
-.navbar a {
-	float: right;
-	display: block;
-	color: black;
+.nav-links a {
+	color: rgb(20, 20, 20);
 	padding: 10px;
 	text-decoration: none;
-	margin-right: 20px;
 }
   
 /* Change background on mouse-over */
-.navbar a:hover {
-	background:rgba(11,57,84,1);
+.nav-links a:hover {
+	background:rgb(20, 20, 20);
 	border-radius: 5px;
 	color: white;
 }
 
-.navbar img {
-	height: 35px;
-	padding-left: 10px;
-}
+
   
 /* Main content */
 .container-main {
@@ -49,6 +102,7 @@ body {
 	text-align: center;
 	font-size: 4rem;
 	margin-bottom: -10px;
+	font-family: 'Signika Bold';
 }
 
 @media (max-width: 600px) {
@@ -63,8 +117,8 @@ body {
 .header-title {
 	text-align: center;
 	font-size: 1.5rem;
-	font-style: italic;
 	padding: 1rem;
+	font-style: italic;
 }
 
 .header-statement {
@@ -92,8 +146,8 @@ body {
 
 .project {
 	color: black;
-	border: 1px solid blue;
-	background: rgb(190, 190, 190);
+	border: 1px solid lightblue;
+	background: lightcoral;
 	padding: 0.5rem;
 	margin: 0.5rem;
 	display: flex;
