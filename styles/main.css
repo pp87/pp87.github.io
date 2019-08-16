@@ -65,8 +65,9 @@ body {
 }
 
 .nav-logo img {
-	height: 40px;
-	padding: 5px 5px 5px 10px;
+	height: 45px;
+	padding-top: 3px;
+	padding-left: 10px;
 }
 
 .nav-links {
@@ -85,7 +86,7 @@ body {
 /* Change background on mouse-over */
 .nav-links a:hover {
 	background:rgb(20, 20, 20);
-	border-radius: 5px;
+	border-radius: 4px;
 	color: white;
 }
 
@@ -124,12 +125,15 @@ body {
 .header-statement {
 	text-align: center;
 	padding: 1rem;
+	max-width: 800px;
+	margin: auto;
 }
 
 .header-tools {
 	text-align: center;
 	padding: 1rem;
-	font-weight: bold;
+	max-width: 800px;
+	margin: auto;
 }
 
 .container-projects {
@@ -145,14 +149,32 @@ body {
 }
 
 .project {
-	color: black;
-	border: 1px solid lightblue;
-	background: lightcoral;
-	padding: 0.5rem;
+	padding: 1rem;
 	margin: 0.5rem;
 	display: flex;
-	width: 200px;
-	height: 200px;
+	width: 190px;
+	height: 190px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px rgb(197, 197, 197);
+	text-align: center;
+}
+
+.project a {
+	font-weight: bold;
+	color: rgb(20, 20, 20);
+	text-align: center;
+	text-decoration: none;
+}
+
+.project a:hover {
+	font-weight: bold;
+	text-color: rgb(62, 5, 136);
+	text-decoration: underline;
+}
+
+.project a:visited {
+	color: rgb(20, 20, 20);
+	text-decoration: none;
 }
 
 .container-footer {
@@ -166,12 +188,11 @@ body {
 
 .container-footer a:hover {
 	font-weight: bold;
-	text-decoration: black;
-	text-decoration-line: none;
-	text-decoration-style: dotted;
+	color: rgb(20, 20, 20);
+	text-decoration-line: underline;
 }
 
 .container-footer a:visited {
-	color: black;
+	color: rgb(20, 20, 20);
 	text-decoration: none;
 }
