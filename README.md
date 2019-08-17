@@ -1,4 +1,4 @@
 # pp87.github.io
-Official Website
-Wiki will contain a journal and tasks to complete.
-Readme will contain general information.
+My name is Paweł Piegutkowski, and I am passionate about Web Development and Networking.
+
+This is my personal website, my portfolio. Site is constantly under development since August 2019.
