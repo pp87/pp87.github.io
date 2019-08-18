@@ -13,38 +13,8 @@
     src: url("fonts/Inter-Italic.ttf");
 }
 
-@font-face {
-    font-family: "Signika Regular";
-    src: url("fonts/Signika-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Signika Bold";
-    src: url("fonts/Signika-Bold.ttf");
-}
-
-@font-face {
-    font-family: "Signika Light";
-    src: url("fonts/Signika-Light.ttf");
-}
-
-@font-face {
-    font-family: "Signika Semibold";
-    src: url("fonts/Signika-Semibold.ttf");
-}
-
-@font-face {
-    font-family: "Gothic";
-    src: url("fonts/GOTHIC.TTF");
-}
-
-@font-face {
-    font-family: "Gothic Bold";
-    src: url("fonts/GOTHICB.TTF");
-}
-
-body {
-	font-family: 'Inter Regular', 'Signika Light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+	font-family: 'Inter Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: rgb(20, 20, 20);
 	box-sizing: border-box;
 }
@@ -94,7 +64,7 @@ body {
   
 /* Main content */
 .container-main {
-	padding-top: 80px; /* Add a top margin to avoid content overlay */
+	padding-top: 60px; /* Add a top margin to avoid content overlay */
 	display: flex;
 	flex-flow: column;
 }
@@ -103,10 +73,17 @@ body {
 	text-align: center;
 	font-size: 4rem;
 	margin-bottom: -10px;
-	font-family: 'Signika Bold';
+	/* font-family: 'Inter Bold'; */
 }
 
-@media (max-width: 600px) {
+.header-title {
+	text-align: center;
+	padding: 1rem;
+	font-style: italic;
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
 	.header-name {
 		font-size: 2rem;
 	}
@@ -115,18 +92,12 @@ body {
 	}
 }
 
-.header-title {
-	text-align: center;
-	font-size: 1.5rem;
-	padding: 1rem;
-	font-style: italic;
-}
-
 .header-statement {
 	text-align: center;
 	padding: 1rem;
 	max-width: 800px;
 	margin: auto;
+	padding-top: 2rem;
 }
 
 .header-tools {
@@ -140,41 +111,46 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 3rem;
+	align-items: stretch;
 }
 
 .header-projects {
 	margin: 0px;
 	padding: 1rem;
 	text-align: center;
+	margin-top: 3rem;
 }
 
 .project {
+	display: flex;
+	flex-direction: column;
 	padding: 1rem;
 	margin: 0.5rem;
-	display: flex;
-	width: 190px;
-	height: 190px;
 	border-radius: 4px;
 	box-shadow: 0px 2px 4px rgb(197, 197, 197);
 	text-align: center;
+	width: 300px;
 }
 
-.project a {
+.project-link {
 	font-weight: bold;
 	color: rgb(20, 20, 20);
-	text-align: center;
 	text-decoration: none;
 }
 
-.project a:hover {
+.project-link:hover {
 	font-weight: bold;
-	text-color: rgb(62, 5, 136);
 	text-decoration: underline;
 }
 
-.project a:visited {
+.project-link:visited {
 	color: rgb(20, 20, 20);
 	text-decoration: none;
+}
+
+.screenshot {
+	max-width: 250px;
 }
 
 .container-footer {
