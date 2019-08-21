@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Inter Regular";
-    src: url("styles/fonts/Inter-Regular.ttf");
+    src: url("/styles/fonts/Inter-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Inter Bold";
-    src: url("styles/fonts/Inter-Bold.ttf");
+    src: url("/styles/fonts/Inter-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Inter Italic";
-    src: url("styles/fonts/Inter-Italic.ttf");
+    src: url("/styles/fonts/Inter-Italic.ttf") format("truetype");
 }
 
 * {
-	font-family: 'Inter Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Inter Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	color: rgb(20, 20, 20);
 	box-sizing: border-box;
 }
