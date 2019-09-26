@@ -2,7 +2,7 @@
 	font-family: "Inter-Regular";
 	font-display: swap;
 	font-style:  normal;
-  	font-weight: 400;
+	font-weight: 400;
 	src: url("/styles/fonts/Inter-Regular.woff") format("woff"),
 		url("/styles/fonts/Inter-Regular.ttf") format("truetype");
 }
@@ -11,7 +11,7 @@
 	font-family: "Inter-Bold";
 	font-display: swap;
 	font-style:  normal;
-  	font-weight: 700;
+	font-weight: 700;
     src: url("/styles/fonts/Inter-Bold.woff") format("woff"),
 		url("/styles/fonts/Inter-Bold.ttf") format("truetype");
 }
@@ -20,7 +20,7 @@
 	font-family: "Inter-Italic";
 	font-display: swap;
 	font-style:  italic;
-  	font-weight: 400;
+	font-weight: 400;
     src: url("/styles/fonts/Inter-Italic.woff") format("woff"),
 		url("/styles/fonts/Inter-Italic.ttf") format("truetype");
 }
@@ -64,7 +64,7 @@
 	padding: 10px;
 	text-decoration: none;
 }
-  
+
 /* Change background on mouse-over */
 .nav-links a:hover {
 	background:rgb(20, 20, 20);
@@ -72,8 +72,6 @@
 	color: white;
 }
 
-
-  
 /* Main content */
 .container-main {
 	padding-top: 60px; /* Add a top margin to avoid content overlay */
@@ -86,6 +84,7 @@
 	font-size: 4rem;
 	margin-bottom: -10px;
 	/* font-family: 'Inter Bold'; */
+	color: rgb(89, 0, 255);
 }
 
 .header-title {
@@ -103,11 +102,20 @@
 	padding-top: 2rem;
 }
 
+b.bigger {
+	font-size: 1.25rem;
+	color: rgb(89, 0, 255);
+}
+
 .header-tools {
 	text-align: center;
 	padding: 1rem;
 	max-width: 800px;
 	margin: auto;
+}
+
+.header-statement, .header-tools {
+	line-height: 1.5rem;
 }
 
 .container-projects {
@@ -123,6 +131,7 @@
 	padding: 1rem;
 	text-align: center;
 	margin-top: 3rem;
+	color: rgb(89, 0, 255);
 }
 
 .project {
@@ -192,5 +201,8 @@
 		width: 300px;
 		margin: auto;
 		padding-bottom: 20px;
+	}
+	.header-statement, .header-tools {
+		line-height: 1.25rem;
 	}
 }
