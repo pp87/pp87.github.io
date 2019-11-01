@@ -205,4 +205,16 @@ b.bigger {
 	.header-statement, .header-tools {
 		line-height: 1.25rem;
 	}
+	.navbar {
+		font-size: 0.8rem;
+	}
+	.nav-logo img {
+		height: 35px;
+		padding-top: 3px;
+		padding-left: 10px;
+	}
+	.nav-links a {
+		padding: 7px;
+		text-decoration: none;
+	}
 }
