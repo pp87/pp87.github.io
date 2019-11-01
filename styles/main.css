@@ -217,4 +217,7 @@ b.bigger {
 		padding: 7px;
 		text-decoration: none;
 	}
+	.container-footer {
+		font-size: 0.7rem;
+	}
 }
